@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="302.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectlaundry.FXMLLayananController">
+   <children>
+      <Label layoutX="22.0" layoutY="23.0" text="Katalog Layanan Laundry">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtsearch" layoutX="242.0" layoutY="22.0" onKeyReleased="#cariData" prefHeight="25.0" prefWidth="200.0" promptText="search by kode/nama" />
+      <Button fx:id="btnsearch" layoutX="448.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnsearchclick" prefHeight="25.0" prefWidth="44.0" text="Cari" />
+      <TableView fx:id="tbvlayanan" layoutX="22.0" layoutY="54.0" onMouseClicked="#showgambar" prefHeight="172.0" prefWidth="470.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <ImageView fx:id="imglayanan" fitHeight="222.0" fitWidth="154.0" layoutX="506.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnfirst" layoutX="22.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnfirstclick" prefHeight="40.0" prefWidth="45.0" text="|&lt;" />
+      <Button fx:id="btnprev" layoutX="72.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnprevclick" prefHeight="40.0" prefWidth="45.0" text="&lt;" />
+      <Button fx:id="btnnext" layoutX="122.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnnextclick" prefHeight="40.0" prefWidth="45.0" text="&gt;" />
+      <Button fx:id="btnlast" layoutX="172.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnlastclick" prefHeight="40.0" prefWidth="45.0" text="&gt;|" />
+      <Button fx:id="btninsert" layoutX="262.0" layoutY="235.0" mnemonicParsing="false" onAction="#btninsertclick" prefHeight="40.0" prefWidth="72.0" text="Tambah" />
+      <Button fx:id="btnupdate" layoutX="340.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnupdateclick" prefHeight="40.0" prefWidth="72.0" text="Ubah" />
+      <Button fx:id="btndelete" layoutX="418.0" layoutY="235.0" mnemonicParsing="false" onAction="#btndeleteclick" prefHeight="40.0" prefWidth="72.0" text="Hapus" />
+   </children>
+</AnchorPane>

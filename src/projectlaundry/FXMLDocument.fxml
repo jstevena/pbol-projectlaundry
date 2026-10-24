@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="321.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectlaundry.FXMLDocumentController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="499.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Display Data">
+            <items>
+              <MenuItem fx:id="menuDataLayanan" mnemonicParsing="false" onAction="#menuDataLayananClick" text="Katalog Layanan" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Input Data">
+            <items>
+              <MenuItem fx:id="menuInputLayanan" mnemonicParsing="false" onAction="#InputLayananClick" text="Input Layanan" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="104.0" layoutY="126.0" text="Katalog Layanan Laundry">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
